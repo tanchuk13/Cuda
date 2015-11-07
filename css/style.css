@@ -343,19 +343,6 @@ margin-bottom: 110px;
 }
 
 
-.block_portfolio_box {
-margin: 47px 360px 65px 360px;
-}
-
-#block_portfolio.box {
-display: inline-block;
-}
-
-#block_portfolio .box li {
-display: inline-block;
-background-color: #ebc985;
-}
-
 #block_portfolio .box li a{
 height: 18px;
 padding: 10px 20px;
@@ -396,12 +383,15 @@ padding-bottom: 65px;
 /***************************/
 .tabs {
   position: relative;
-  min-height: 1200px; 
+  min-height: 800px; 
   clear: both;
   margin: 25px 0;
 }
 .tab {
   float: left;
+  height: 18px;
+	padding: 10px 20px;
+	text-transform: uppercase;
 }
 .tab label {
   background: #ebc985;
