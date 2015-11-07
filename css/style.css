@@ -394,8 +394,43 @@ padding-bottom: 65px;
 
 
 /***************************/
+.tabs {
+  position: relative;
+  min-height: 1200px; 
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #ebc985;
+  padding: 10px;
+  
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+}
+.tab [type=radio] {
+  display: none;
+}
+.portfolio_content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #ffdd99;
+  right: 0;
+  bottom: 0;
 
-
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .portfolio_content {
+  z-index: 1;
+}
 /**************************/
 
 /*C L I E N T S*/
