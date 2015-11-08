@@ -16,6 +16,9 @@ font-family: 'Titillium Web', sans-serif;
 li {
 	list-style: none
 	}
+#services_first_li, #team_first_li {
+margin-left:0;
+}
 	
 a {
 	text-decoration: none;
@@ -24,6 +27,7 @@ a {
 h1 {
 text-align: center;
 font-size: 40px;
+margin-bottom: 20px;
 }	
 
 h2 {
@@ -36,10 +40,12 @@ font-size: 18px;
 h3{
 display: block;
 margin: 0 auto;
+margin-bottom:85px;
 text-align: center;
 width: 600px;
 font-size: 16px;
 font-weight: 300;
+
 }
 
 
@@ -60,6 +66,7 @@ padding: 120px 170px;
 }
 
 .button {
+display: block;
 padding: 29px 80px;
 width: 293px;
 text-align: center;
@@ -67,14 +74,10 @@ text-transform: uppercase;
  -webkit-border-radius: 3px;
  -moz-border-radius: 3px;
  border-radius: 3px;
- cursor: pointer;
- color: white;
+  color: white;
  font: 24px 'Tutillium Web' normal;
+ margin-top: 20px;
 }
-.button a {
-color: white}
-
-
 
 .button_center {
 margin: 0 auto;
@@ -84,6 +87,8 @@ margin: 0 auto;
 font: bold 24px  'Titilium Web'  sans-serif;
 text-transform: uppercase;
 }
+
+
 
 /* H E A R E R */
 #block_header {
@@ -148,27 +153,17 @@ background-color:#17c2a4;
 color: white;
 }
 
-#block_services h3 {
-margin-bottom: 140px;
-}
-
 #navigation_2 {
 display: table;
 }
 
 .navigation_2_item {
-	
 	float: left;
 	width: 250px;
-	/*height:330px;*/
 	margin-left:20px;
 }
 
-/*
-#navigation_2 div:first_child {
-margin-left: 0;
-}
-*/
+
 .navigation_2_item_img {
 	overflow: hidden;
 	min-height: 135px;
@@ -177,10 +172,7 @@ margin-left: 0;
 	margin: 0 auto;
 	text-align: center;
 }
-.navigation_2_item_img img {
 
-
-}
 
 .navigation_2_item_name {
 
@@ -205,23 +197,22 @@ text-overflow: ellipsis; /*it doesn`t work*/
 min-height: 100px;
 max-height: 100px;
 padding: 0 30px;
-
-
 }
 
-
+/*	T E A M */
 #block_team {
 background-color: #e7f1f8;
-
+font-family: 'Titillium Web'
 }
 
 .content_3_item {
 float: left;
 padding: 0 30px;
+margin-left:20px;
 width: 200px;
 text-align:center;
-margin-top: 80px;
 }
+
 
 .content_3_item_photo{
 width: 200px;
@@ -234,15 +225,13 @@ background-color: rgb(135, 135, 135);
 
 }
 .content_3_item_name {
-display: table-cell;
-vertical-align: middle;
-text-overflow: clip;
-overflow: hidden;
-padding-top: 45px;
-}
 
-.content_3_item_name {
-height: 140px;
+height: 51px;
+overflow: hidden;
+vertical-align: middle;
+text-align: center;
+text-overflow: clip;
+padding-top: 45px;
 }
 
 .content_3_item_position {
@@ -252,12 +241,10 @@ margin: 15px 0;
 }
 
 .content_3_item_socio {
-
     padding: 0;
     margin: 30px auto;
     display: inline-block;
 }
-
 
 .content_3_item_socio li {
 	margin: 0 5px;
@@ -282,8 +269,8 @@ margin: 15px 0;
 
 .content_3_item_socio li :hover {
 background-color: #aec1ce ;
-
 }
+
 /* S K I L L S */ 
 #block_skills {
 background-color:#ffffff;
@@ -338,23 +325,6 @@ background-color:#ffdd99;
 #block_portfolio .button {
 border-bottom: 4px solid #14a58c;
 background-color: #17c2a4;
-margin-top: 20px;
-margin-bottom: 110px;
-}
-
-
-#block_portfolio .box li a{
-height: 18px;
-padding: 10px 20px;
-display: inline-block;
-text-transform: uppercase;
-text-decoration: none;
-color: black;
-font-size: 18px;
-}
-
-#block_portfolio .box li a:hover {
-background-color: white;
 }
 
 .portfolio {
@@ -365,7 +335,6 @@ display: inline-block;
 height: 306px;
 width: 540px;
 background: url("../img/layout/comp.png") no-repeat; 
-
 }
 
 .portfolio_img img {
@@ -380,18 +349,20 @@ padding-bottom: 65px;
 }
 
 
-/***************************/
+/* tabs */
 .tabs {
   position: relative;
-  min-height: 800px; 
+  min-height: 850px; 
   clear: both;
-  margin: 25px 0;
+  
 }
 .tab {
-  float: left;
-  height: 18px;
+	
+   float: left;
+    height: 18px;
 	padding: 10px 20px;
 	text-transform: uppercase;
+	margin-bottom: 65px;
 }
 .tab label {
   background: #ebc985;
@@ -406,6 +377,7 @@ padding-bottom: 65px;
 }
 .portfolio_content {
   position: absolute;
+  margin-top: 65px;
   top: 28px;
   left: 0;
   background: #ffdd99;
@@ -421,7 +393,7 @@ padding-bottom: 65px;
 [type=radio]:checked ~ label ~ .portfolio_content {
   z-index: 1;
 }
-/**************************/
+
 
 /*C L I E N T S*/
 #block_clients {
@@ -476,10 +448,6 @@ color: white;
 border-bottom: 4px solid #299ec5;
 background-color: #30bae7;
 margin-top: 75px;
-}
-
-#block_contacts  h3 {
-padding-bottom: 80px;
 }
 
 #block_contacts input {
