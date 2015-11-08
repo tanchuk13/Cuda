@@ -102,7 +102,7 @@ background-color: #eb7d4b;
 }
 
 #block_header .button:hover {
-background-color: red;
+background-color: #f1814e;
 }
  
 #block_header .block_content {
@@ -288,26 +288,28 @@ height: 250px;
 
 .skills_diagrams_data {
 position: relative;
+height: 200px;
 }
 
 .skills_diagrams {
 float: left;
 height: 150px;
 width: 160px;
-margin-left:60px;
-margin-right: 50px;
+padding-left:60px;
+padding-right: 50px;
 }
 
 
 .skills_diagrams_data span {
 	position: relative;
-	top: -50px;
+	top: -120px;
 	left: 50px;
+	font: 50px 'Titillium Web' lighter;
 	}
 	
 .skills_diagrams_data span:after {
 content: '%';
-font-size: 10px;
+font-size: 30px;
 }
 
 .skills_diagrams_name {
