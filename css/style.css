@@ -123,7 +123,7 @@ font: 16px 'Titillium Web';
 .main_navigation_item  {
 display: inline-block;
 padding: 10px 20px;
-height: 16px;
+/*height: 16px;*/
 margin: 0 auto;
 border-radius: 4px; 
  -webkit-border-radius: 4px;
@@ -338,16 +338,14 @@ background-color: #17c2a4;
 }
 
 #block_portfolio .button:hover {
-
 background-color: #14a188;
 }
-
 
 .portfolio {
 display: inline-block;
 	}
 
-.portfolio_img {
+	.portfolio_img {
 height: 306px;
 width: 540px;
 background: url("../img/layout/comp.png") no-repeat; 
@@ -480,12 +478,19 @@ color: white;
 }
 .submit {
 border: none; 
+padding:29px 50px;
 }
 
 #block_contacts .button {
 border-bottom: 4px solid #299ec5;
 background-color: #30bae7;
 margin-top: 75px;
+}
+
+#block_contacts .button:hover {
+background-color: #279dc3;
+cursor: pointer;
+
 }
 
 #block_contacts input {
@@ -514,6 +519,10 @@ margin: 0 120px;
 margin-bottom: 35px;
   }
 
+ .inToch_message {
+resize: both;
+ }
+ 
 .input_left {
 margin-right: 20px;
 }
