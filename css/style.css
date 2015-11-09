@@ -265,7 +265,10 @@ margin: 15px 0;
 	}
 
 .content_3_item_socio li a{
-	padding-top: 6px;
+	display: block;
+	height:32px;
+	width:32px;
+	border-radius: 100%;
 	}
 
 .content_3_item_socio li a img {
@@ -450,7 +453,7 @@ margin:0 0 148px 148px;
 }
 .client_name {
 color: white;
-padding-top:35px;
+padding-top:30px;
 text-transform: uppercase;
 font-family: 'Titillium Web', sans-serif;
 font-weight: bold;
@@ -465,13 +468,18 @@ font-family: 'Titillium Web', sans-serif;
 .client_feedback {
 padding-right: 45px;
 width: 350px;
+height: 145px;
 font-family: 'Titillium Web', sans-serif;
+font-style: italic;
 }
 
 /* C O N T A C T S*/
 #block_contacts {
 background-color:#3c5499;
 color: white;
+}
+.submit {
+border: none; 
 }
 
 #block_contacts .button {
