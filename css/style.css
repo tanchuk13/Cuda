@@ -354,33 +354,39 @@ padding-bottom: 65px;
 /* tabs */
 .tabs {
   position: relative;
-  min-height: 850px; 
+  min-height: 890px; 
   clear: both;
   
 }
 .tab {
-	
-   float: left;
+	float: left;
     height: 18px;
 	padding: 10px 20px;
 	text-transform: uppercase;
-	margin-bottom: 65px;
+	align: center;
+	
 }
 .tab label {
-  background: #ebc985;
-  padding: 10px;
-  
-  margin-left: -1px;
-  position: relative;
-  left: 1px;
+	display: inline-block;
+	text-align: center;
+	background: #ebc985;
+	padding: 10px 0;
+	width: 84px;
+    position: relative;
+	/*left: 365px;*/
+	border-radius: 5px;
 }
+.tab label:hover {
+cursor: pointer;
+}
+
 .tab [type=radio] {
   display: none;
 }
 .portfolio_content {
   position: absolute;
   margin-top: 65px;
-  top: 28px;
+  top: 100px;
   left: 0;
   background: #ffdd99;
   right: 0;
