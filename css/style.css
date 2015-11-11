@@ -79,7 +79,8 @@ text-transform: uppercase;
  -moz-border-radius: 3px;
  border-radius: 3px;
   color: white;
- font: 24px 'Tutillium Web' normal;
+font-size: 18px;
+font-weight: bold;
  margin-top: 20px;
 }
 
@@ -227,6 +228,8 @@ background-color: rgb(135, 135, 135);
  -webkit-border-radius: 100px;
  -moz-border-radius: 100px;
  border-radius: 100px;
+ display:table-cell;
+ vertical-align: middle;
 
 }
 .content_3_item_name {
@@ -442,6 +445,12 @@ background-color: #787878;
  border-radius: 45px;
 float: left;
 overflow: hidden;
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+line-height: 90px;
+margin: 0px;
+padding: 0px;
 }
 
 .client_about {
